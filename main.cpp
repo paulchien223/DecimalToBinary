@@ -14,7 +14,7 @@ int main() {
     power++;
   }
 
-  cout << decimal << "的二進位值為：";
+  cout << decimal << " in binary is：";
 
   for (power = power - 1; power >= 0;) {
     if (decimal - pow(2,power) >= 0) {
