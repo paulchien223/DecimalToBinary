@@ -4,12 +4,10 @@ using namespace std;
 
 int main() {
   int decimal;
-  cout << "請輸入一個整數：";
-  cin >> decimal;
-  if (decimal < 0) {
-    cout << "請重新輸入";
-    return 0;
-  }
+  do {
+  cout << "Please enter a positive integer：";
+  cin >> decimal; 
+  } while (decimal < 0);
 
   int power;
   for (power = 1; pow(2,power) <= decimal;) {
